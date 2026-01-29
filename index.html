@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Suhani Industries - Precision CNC Machining, 3D Wood Carving, Metal Works & Custom Fabrication. Experience cutting-edge manufacturing excellence.">
+    <title>Suhani Industries | Precision CNC & Manufacturing Excellence</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:wght@300;400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Hex Grid Background Texture -->
+    <div class="hex-grid-overlay"></div>
+    
+    <!-- ========== NAVIGATION - MULTI-PAGE ========== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/BrandLogo.webp" alt="Suhani Industries">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            
+            <!-- Desktop Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <span class="nav-indicator"></span>
+                            HOME
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <span class="nav-indicator"></span>
+                            ABOUT
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html" data-bs-toggle="dropdown">
+                            <span class="nav-indicator"></span>
+                            SERVICES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html#3d-carving">3D CARVING</a></li>
+                            <li><a class="dropdown-item" href="services.html#2d-carving">2D CARVING</a></li>
+                            <li><a class="dropdown-item" href="services.html#wave-board">WAVE BOARD</a></li>
+                            <li><a class="dropdown-item" href="services.html#metal-cnc">METAL CNC</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">
+                            <span class="nav-indicator"></span>
+                            GALLERY
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <span class="nav-indicator"></span>
+                            CONTACT
+                        </a>
+                    </li>
+                    <li class="nav-item nav-cta">
+                        <a class="btn-neon" href="contact.html">
+                            <span class="btn-text">GET QUOTE</span>
+                            <span class="btn-glitch"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Neon Line -->
+        <div class="nav-neon-line"></div>
+    </nav>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+            <div class="brand-wrapper">
+                <span class="brand-icon">▲</span>
+                <span class="brand-text">SUHANI</span>
+            </div>
+            <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="mobile-nav">
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <a href="contact.html" class="btn-neon mobile-cta">
+                <span class="btn-text">GET QUOTE</span>
+            </a>
+        </div>
+        <div class="offcanvas-footer">
+            <div class="social-links">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== HERO SECTION - AGGRESSIVE GEOMETRY ========== -->
+    <section id="hero" class="hero-section">
+        <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="hero-slide">
+                        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1920&q=80');"></div>
+                        <div class="hero-overlay"></div>
+                        <div class="hero-geometric-accent"></div>
+                        <div class="crosshair-overlay"></div>
+                        
+                        <div class="container hero-content">
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <div class="hero-tag-wrapper" data-aos="fade-right">
+                                        <span class="hero-tag">
+                                            <span class="tag-line"></span>
+                                            PRECISION MANUFACTURING
+                                        </span>
+                                    </div>
+                                    <h1 class="hero-title glitch-text" data-aos="fade-right" data-aos-delay="100">
+                                        MASTER CRAFTSMANSHIP IN
+                                        <span class="neon-text">3D WOOD CARVING</span>
+                                    </h1>
+                                    <p class="hero-desc" data-aos="fade-right" data-aos-delay="200">
+                                        Transforming raw materials into intricate artistry with state-of-the-art CNC technology.
+                                    </p>
+                                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                                        <a href="services.html" class="btn-sharp primary">
+                                            <span class="btn-content">
+                                                <span class="btn-text">EXPLORE CAPABILITIES</span>
+                                                <i class="bi bi-arrow-right"></i>
+                                            </span>
+                                            <span class="btn-border"></span>
+                                        </a>
+                                        <a href="contact.html" class="btn-sharp secondary">
+                                            <span class="btn-content">
+                                                <span class="btn-text">GET QUOTE</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating Stats -->
+                        <div class="hero-floating-stats" data-aos="fade-left" data-aos-delay="400">
+                            <div class="floating-stat">
+                                <span class="stat-value">500+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="floating-stat">
+                                <span class="stat-value">10+</span>
+                                <span class="stat-label">Years</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="hero-slide">
+                        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1920&q=80');"></div>
+                        <div class="hero-overlay"></div>
+                        <div class="hero-geometric-accent"></div>
+                        <div class="crosshair-overlay"></div>
+                        
+                        <div class="container hero-content">
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <div class="hero-tag-wrapper" data-aos="fade-right">
+                                        <span class="hero-tag">
+                                            <span class="tag-line"></span>
+                                            INDUSTRIAL EXCELLENCE
+                                        </span>
+                                    </div>
+                                    <h1 class="hero-title glitch-text" data-aos="fade-right" data-aos-delay="100">
+                                        CUTTING-EDGE
+                                        <span class="neon-text">METAL CNC</span>
+                                        SOLUTIONS
+                                    </h1>
+                                    <p class="hero-desc" data-aos="fade-right" data-aos-delay="200">
+                                        Precision metal fabrication with micron-level accuracy for industrial applications.
+                                    </p>
+                                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                                        <a href="contact.html" class="btn-sharp primary">
+                                            <span class="btn-content">
+                                                <span class="btn-text">REQUEST QUOTE</span>
+                                                <i class="bi bi-arrow-right"></i>
+                                            </span>
+                                            <span class="btn-border"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="hero-slide">
+                        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920&q=80');"></div>
+                        <div class="hero-overlay"></div>
+                        <div class="hero-geometric-accent"></div>
+                        <div class="crosshair-overlay"></div>
+                        
+                        <div class="container hero-content">
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <div class="hero-tag-wrapper" data-aos="fade-right">
+                                        <span class="hero-tag">
+                                            <span class="tag-line"></span>
+                                            INNOVATION DRIVEN
+                                        </span>
+                                    </div>
+                                    <h1 class="hero-title glitch-text" data-aos="fade-right" data-aos-delay="100">
+                                        CUSTOM
+                                        <span class="neon-text">WAVE BOARDS</span>
+                                        & DESIGN
+                                    </h1>
+                                    <p class="hero-desc" data-aos="fade-right" data-aos-delay="200">
+                                        Creating unique wave patterns and textures for modern interior design.
+                                    </p>
+                                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                                        <a href="gallery.html" class="btn-sharp primary">
+                                            <span class="btn-content">
+                                                <span class="btn-text">VIEW PORTFOLIO</span>
+                                                <i class="bi bi-arrow-right"></i>
+                                            </span>
+                                            <span class="btn-border"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Custom Pagination -->
+            <div class="hero-pagination-wrapper">
+                <div class="swiper-pagination"></div>
+                <div class="pagination-progress"></div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <span class="scroll-text">SCROLL</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== STATS SECTION - SLASHED GEOMETRY ========== -->
+    <section id="stats" class="stats-section">
+        <div class="circuit-pattern"></div>
+        
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="stat-inner">
+                        <div class="stat-icon-wrapper">
+                            <div class="hex-icon">
+                                <i class="bi bi-calendar-check"></i>
+                            </div>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number-wrapper">
+                                <span class="stat-number" data-count="10">0</span>
+                                <span class="stat-suffix">+</span>
+                            </div>
+                            <span class="stat-label">YEARS EXPERIENCE</span>
+                        </div>
+                    </div>
+                    <div class="stat-glow"></div>
+                </div>
+                
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-inner">
+                        <div class="stat-icon-wrapper">
+                            <div class="hex-icon">
+                                <i class="bi bi-gear-wide-connected"></i>
+                            </div>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number-wrapper">
+                                <span class="stat-number" data-count="500">0</span>
+                                <span class="stat-suffix">+</span>
+                            </div>
+                            <span class="stat-label">PROJECTS DELIVERED</span>
+                        </div>
+                    </div>
+                    <div class="stat-glow"></div>
+                </div>
+                
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-inner">
+                        <div class="stat-icon-wrapper">
+                            <div class="hex-icon">
+                                <i class="bi bi-people"></i>
+                            </div>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number-wrapper">
+                                <span class="stat-number" data-count="200">0</span>
+                                <span class="stat-suffix">+</span>
+                            </div>
+                            <span class="stat-label">HAPPY CLIENTS</span>
+                        </div>
+                    </div>
+                    <div class="stat-glow"></div>
+                </div>
+                
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-inner">
+                        <div class="stat-icon-wrapper">
+                            <div class="hex-icon">
+                                <i class="bi bi-cpu"></i>
+                            </div>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number-wrapper">
+                                <span class="stat-number" data-count="15">0</span>
+                                <span class="stat-suffix">+</span>
+                            </div>
+                            <span class="stat-label">MACHINES OPERATIONAL</span>
+                        </div>
+                    </div>
+                    <div class="stat-glow"></div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- ========== ABOUT SECTION - OVERLAPPING ELEMENTS ========== -->
+    <section id="about" class="about-section">
+        <div class="dotted-pattern"></div>
+        
+        <div class="container">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+                    <div class="about-image-wrapper">
+                        <div class="image-frame">
+                            <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&q=80" alt="CNC Machine">
+                            <div class="image-overlay"></div>
+                            <div class="corner-accent tl"></div>
+                            <div class="corner-accent br"></div>
+                        </div>
+                        <!-- Floating Badge - Overlapping -->
+                        <div class="experience-badge">
+                            <div class="badge-inner">
+                                <span class="badge-number">10+</span>
+                                <span class="badge-text">YEARS OF<br>EXCELLENCE</span>
+                            </div>
+                            <div class="badge-glow"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+                    <div class="about-content">
+                        <div class="section-label">
+                            <span class="label-line"></span>
+                            <span class="label-text">WHO WE ARE</span>
+                        </div>
+                        <h2 class="section-title">
+                            ENGINEERING <span class="neon-text">PRECISION</span><br>
+                            INTO EVERY CUT
+                        </h2>
+                        <p class="about-text">
+                            At Suhani Industries, we combine decades of craftsmanship with cutting-edge CNC technology 
+                            to deliver unparalleled precision in wood and metal fabrication. Our state-of-the-art facility 
+                            houses the latest in 3-axis and 5-axis CNC machines.
+                        </p>
+                        
+                        <div class="feature-grid">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <span class="icon-bracket">[</span>
+                                    <i class="bi bi-patch-check-fill"></i>
+                                    <span class="icon-bracket">]</span>
+                                </div>
+                                <span class="feature-text">ISO 9001:2015 Certified</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <span class="icon-bracket">[</span>
+                                    <i class="bi bi-cpu-fill"></i>
+                                    <span class="icon-bracket">]</span>
+                                </div>
+                                <span class="feature-text">Advanced CAD/CAM</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <span class="icon-bracket">[</span>
+                                    <i class="bi bi-vector-pen"></i>
+                                    <span class="icon-bracket">]</span>
+                                </div>
+                                <span class="feature-text">Custom Design Solutions</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <span class="icon-bracket">[</span>
+                                    <i class="bi bi-clock-fill"></i>
+                                    <span class="icon-bracket">]</span>
+                                </div>
+                                <span class="feature-text">24/7 Production</span>
+                            </div>
+                        </div>
+                        
+                        <a href="about.html" class="btn-sharp primary">
+                            <span class="btn-content">
+                                <span class="btn-text">LEARN MORE</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </span>
+                            <span class="btn-border"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- ========== SERVICES SECTION - GLASSMORPHISM CARDS ========== -->
+    <section id="services" class="services-section">
+        <div class="hex-pattern"></div>
+        
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label centered">
+                    <span class="label-line"></span>
+                    <span class="label-text">WHAT WE OFFER</span>
+                    <span class="label-line"></span>
+                </div>
+                <h2 class="section-title centered">
+                    PRECISION <span class="neon-text">SERVICES</span>
+                </h2>
+            </div>
+            
+            <div class="services-carousel-wrapper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper servicesSwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Service 1 -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <div class="card-image">
+                                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="3D Carving">
+                                    <div class="image-scanline"></div>
+                                    <div class="card-number">01</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">3D CARVING</h3>
+                                    <p class="card-desc">Intricate 3D sculptures and relief carvings with exceptional depth and detail.</p>
+                                    <a href="#" class="btn-service" data-service="3D Carving">
+                                        BOOK SERVICE <i class="bi bi-whatsapp"></i>
+                                    </a>
+                                </div>
+                                <div class="card-accent"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Service 2 -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <div class="card-image">
+                                    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80" alt="2D Carving">
+                                    <div class="image-scanline"></div>
+                                    <div class="card-number">02</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">2D CARVING</h3>
+                                    <p class="card-desc">Precision flat engraving and cutting for signage, panels, and decorative elements.</p>
+                                    <a href="#" class="btn-service" data-service="2D Carving">
+                                        BOOK SERVICE <i class="bi bi-whatsapp"></i>
+                                    </a>
+                                </div>
+                                <div class="card-accent"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Service 3 -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <div class="card-image">
+                                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&q=80" alt="Wave Board">
+                                    <div class="image-scanline"></div>
+                                    <div class="card-number">03</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">WAVE BOARD</h3>
+                                    <p class="card-desc">Custom wave pattern panels for stunning wall features and architectural accents.</p>
+                                    <a href="#" class="btn-service" data-service="Wave Board">
+                                        BOOK SERVICE <i class="bi bi-whatsapp"></i>
+                                    </a>
+                                </div>
+                                <div class="card-accent"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Service 4 -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <div class="card-image">
+                                    <img src="https://images.unsplash.com/photo-1611117775350-ac3950990985?w=600&q=80" alt="Wooden Legs">
+                                    <div class="image-scanline"></div>
+                                    <div class="card-number">04</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">WOODEN LEGS</h3>
+                                    <p class="card-desc">Designer furniture legs with intricate patterns and premium finish quality.</p>
+                                    <a href="#" class="btn-service" data-service="Wooden Legs">
+                                        BOOK SERVICE <i class="bi bi-whatsapp"></i>
+                                    </a>
+                                </div>
+                                <div class="card-accent"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Service 5 -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <div class="card-image">
+                                    <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=600&q=80" alt="Metal CNC">
+                                    <div class="image-scanline"></div>
+                                    <div class="card-number">05</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">METAL CNC WORK</h3>
+                                    <p class="card-desc">Industrial-grade metal machining with micron-level precision for critical parts.</p>
+                                    <a href="#" class="btn-service" data-service="Metal CNC Work">
+                                        BOOK SERVICE <i class="bi bi-whatsapp"></i>
+                                    </a>
+                                </div>
+                                <div class="card-accent"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation -->
+                <div class="services-nav">
+                    <button class="nav-btn prev">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <div class="nav-counter">
+                        <span class="current">01</span>
+                        <span class="separator">/</span>
+                        <span class="total">05</span>
+                    </div>
+                    <button class="nav-btn next">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="services-cta" data-aos="fade-up" data-aos-delay="200">
+                <a href="services.html" class="btn-sharp primary large">
+                    <span class="btn-content">
+                        <span class="btn-text">VIEW ALL SERVICES</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </span>
+                    <span class="btn-border"></span>
+                </a>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- ========== GALLERY SECTION - AGGRESSIVE GRID ========== -->
+    <section id="gallery" class="gallery-section">
+        <div class="grid-lines"></div>
+        
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label centered">
+                    <span class="label-line"></span>
+                    <span class="label-text">PORTFOLIO</span>
+                    <span class="label-line"></span>
+                </div>
+                <h2 class="section-title centered">
+                    RECENT <span class="neon-text">WORK</span>
+                </h2>
+            </div>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-wrapper" data-aos="fade-up" data-aos-delay="100">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="*">
+                        <span class="btn-text">ALL</span>
+                        <span class="btn-indicator"></span>
+                    </button>
+                    <button class="filter-btn" data-filter=".wood">
+                        <span class="btn-text">WOOD</span>
+                        <span class="btn-indicator"></span>
+                    </button>
+                    <button class="filter-btn" data-filter=".metal">
+                        <span class="btn-text">METAL</span>
+                        <span class="btn-indicator"></span>
+                    </button>
+                    <button class="filter-btn" data-filter=".three-d">
+                        <span class="btn-text">3D</span>
+                        <span class="btn-indicator"></span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="gallery-item wood">
+                    <a href="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80" data-fancybox="gallery" data-caption="Intricate Wood Carving Panel">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Wood Carving">
+                            <div class="item-overlay">
+                                <div class="overlay-content">
+                                    <span class="item-category">WOOD</span>
+                                    <span class="item-title">Carving Panel</span>
+                                    <div class="zoom-icon">
+                                        <i class="bi bi-arrows-fullscreen"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="corner-bracket tl"></div>
+                            <div class="corner-bracket br"></div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item metal three-d">
+                    <a href="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1200&q=80" data-fancybox="gallery" data-caption="CNC Metal Component">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=600&q=80" alt="Metal CNC">
+                            <div class="item-overlay">
+                                <div class="overlay-content">
+                                    <span class="item-category">METAL</span>
+                                    <span class="item-title">CNC Component</span>
+                                    <div class="zoom-icon">
+                                        <i class="bi bi-arrows-fullscreen"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="corner-bracket tl"></div>
+                            <div class="corner-bracket br"></div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item wood three-d">
+                    <a href="https://images.unsplash.com/photo-1611117775350-ac3950990985?w=1200&q=80" data-fancybox="gallery" data-caption="3D Wooden Sculpture">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1611117775350-ac3950990985?w=600&q=80" alt="3D Sculpture">
+                            <div class="item-overlay">
+                                <div class="overlay-content">
+                                    <span class="item-category">3D</span>
+                                    <span class="item-title">Wooden Sculpture</span>
+                                    <div class="zoom-icon">
+                                        <i class="bi bi-arrows-fullscreen"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="corner-bracket tl"></div>
+                            <div class="corner-bracket br"></div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item metal">
+                    <a href="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1200&q=80" data-fancybox="gallery" data-caption="Precision Metal Parts">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80" alt="Metal Parts">
+                            <div class="item-overlay">
+                                <div class="overlay-content">
+                                    <span class="item-category">METAL</span>
+                                    <span class="item-title">Precision Parts</span>
+                                    <div class="zoom-icon">
+                                        <i class="bi bi-arrows-fullscreen"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="corner-bracket tl"></div>
+                            <div class="corner-bracket br"></div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item wood">
+                    <a href="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&q=80" data-fancybox="gallery" data-caption="Wave Board Design">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&q=80" alt="Wave Board">
+                            <div class="item-overlay">
+                                <div class="overlay-content">
+                                    <span class="item-category">WOOD</span>
+                                    <span class="item-title">Wave Board</span>
+                                    <div class="zoom-icon">
+                                        <i class="bi bi-arrows-fullscreen"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="corner-bracket tl"></div>
+                            <div class="corner-bracket br"></div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item three-d metal">
+                    <a href="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&q=80" data-fancybox="gallery" data-caption="Industrial Component">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80" alt="Industrial">
+                            <div class="item-overlay">
+                                <div class="overlay-content">
+                                    <span class="item-category">INDUSTRIAL</span>
+                                    <span class="item-title">Component</span>
+                                    <div class="zoom-icon">
+                                        <i class="bi bi-arrows-fullscreen"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="corner-bracket tl"></div>
+                            <div class="corner-bracket br"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="gallery-cta" data-aos="fade-up" data-aos-delay="300">
+                <a href="gallery.html" class="btn-sharp primary large">
+                    <span class="btn-content">
+                        <span class="btn-text">VIEW FULL GALLERY</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </span>
+                    <span class="btn-border"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ SECTION ========== -->
+    <section id="faq" class="faq-section">
+        <div class="circuit-pattern"></div>
+        
+        <div class="container">
+            <div class="row g-5 align-items-start">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="faq-header">
+                        <div class="section-label">
+                            <span class="label-line"></span>
+                            <span class="label-text">FAQ</span>
+                        </div>
+                        <h2 class="section-title">
+                            HAVE <span class="neon-text">QUESTIONS?</span>
+                        </h2>
+                        <p class="faq-desc">
+                            Find quick answers to the most common inquiries about our CNC services and manufacturing capabilities.
+                        </p>
+                        
+                        <div class="faq-visual">
+                            <div class="visual-graphic">
+                                <span class="question-mark">?</span>
+                                <div class="rotating-gear">
+                                    <i class="bi bi-gear-fill"></i>
+                                </div>
+                                <div class="pulse-ring"></div>
+                                <div class="pulse-ring delay"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="faq-accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-trigger active" data-target="faq1">
+                                <span class="trigger-number">01</span>
+                                <span class="trigger-text">Do you provide custom CNC designs?</span>
+                                <span class="trigger-icon"><i class="bi bi-plus-lg"></i></span>
+                            </button>
+                            <div class="accordion-content show" id="faq1">
+                                <p>Absolutely! We specialize in custom designs. Our team works closely with you from concept to completion, using advanced CAD/CAM software to bring your vision to life with precision accuracy.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-trigger" data-target="faq2">
+                                <span class="trigger-number">02</span>
+                                <span class="trigger-text">What is the turnaround time for bulk orders?</span>
+                                <span class="trigger-icon"><i class="bi bi-plus-lg"></i></span>
+                            </button>
+                            <div class="accordion-content" id="faq2">
+                                <p>Turnaround time depends on order complexity and volume. Standard bulk orders typically take 7-14 business days. Rush orders are available upon request with expedited manufacturing schedules.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-trigger" data-target="faq3">
+                                <span class="trigger-number">03</span>
+                                <span class="trigger-text">Can you work with provided materials?</span>
+                                <span class="trigger-icon"><i class="bi bi-plus-lg"></i></span>
+                            </button>
+                            <div class="accordion-content" id="faq3">
+                                <p>Yes, we accept client-provided materials. Our team will assess the material for CNC compatibility and advise on optimal machining parameters to ensure the best results.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-trigger" data-target="faq4">
+                                <span class="trigger-number">04</span>
+                                <span class="trigger-text">What file formats do you accept?</span>
+                                <span class="trigger-icon"><i class="bi bi-plus-lg"></i></span>
+                            </button>
+                            <div class="accordion-content" id="faq4">
+                                <p>We accept DXF, DWG, AI, CDR, STL, STEP, and IGES files. If you have a different format, contact us and we'll work with you to find a solution.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-trigger" data-target="faq5">
+                                <span class="trigger-number">05</span>
+                                <span class="trigger-text">Do you offer installation services?</span>
+                                <span class="trigger-icon"><i class="bi bi-plus-lg"></i></span>
+                            </button>
+                            <div class="accordion-content" id="faq5">
+                                <p>Yes, we provide professional installation services for large projects within our service area. For distant locations, we offer detailed installation guides and remote support.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- ========== TESTIMONIALS SECTION ========== -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="grid-lines"></div>
+        
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label centered">
+                    <span class="label-line"></span>
+                    <span class="label-text">TESTIMONIALS</span>
+                    <span class="label-line"></span>
+                </div>
+                <h2 class="section-title centered">
+                    CLIENT <span class="neon-text">REVIEWS</span>
+                </h2>
+            </div>
+            
+            <div class="testimonials-wrapper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper testimonialsSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="quote-accent">
+                                    <i class="bi bi-quote"></i>
+                                </div>
+                                <div class="card-content">
+                                    <p class="testimonial-text">
+                                        "Exceptional quality and attention to detail! Suhani Industries delivered our custom 3D carvings 
+                                        ahead of schedule and the precision was beyond our expectations."
+                                    </p>
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="author-info">
+                                    <div class="author-avatar">RK</div>
+                                    <div class="author-details">
+                                        <span class="author-name">RAJESH KUMAR</span>
+                                        <span class="author-role">Interior Designer, Mumbai</span>
+                                    </div>
+                                </div>
+                                <div class="card-border"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="quote-accent">
+                                    <i class="bi bi-quote"></i>
+                                </div>
+                                <div class="card-content">
+                                    <p class="testimonial-text">
+                                        "We've been working with Suhani Industries for 3 years now. Their metal CNC work is top-notch 
+                                        and their team understands industrial requirements perfectly."
+                                    </p>
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="author-info">
+                                    <div class="author-avatar">PS</div>
+                                    <div class="author-details">
+                                        <span class="author-name">PRIYA SHARMA</span>
+                                        <span class="author-role">Manufacturing Head, AutoParts Ltd.</span>
+                                    </div>
+                                </div>
+                                <div class="card-border"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="quote-accent">
+                                    <i class="bi bi-quote"></i>
+                                </div>
+                                <div class="card-content">
+                                    <p class="testimonial-text">
+                                        "The wave board panels we ordered for our hotel lobby are absolutely stunning. 
+                                        The craftsmanship speaks for itself. Highly recommended!"
+                                    </p>
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </div>
+                                </div>
+                                <div class="author-info">
+                                    <div class="author-avatar">AM</div>
+                                    <div class="author-details">
+                                        <span class="author-name">ANIL MEHTA</span>
+                                        <span class="author-role">Hotel Owner, Jaipur</span>
+                                    </div>
+                                </div>
+                                <div class="card-border"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials-pagination">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA SECTION ========== -->
+    <section id="cta" class="cta-section">
+        <div class="cta-bg"></div>
+        <div class="cta-overlay"></div>
+        <div class="geometric-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2 class="cta-title">
+                    READY TO START YOUR <span class="neon-text">PROJECT?</span>
+                </h2>
+                <p class="cta-desc">
+                    Transform your vision into precision-engineered reality. Get in touch with our team today.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-sharp primary large">
+                        <span class="btn-content">
+                            <span class="btn-text">GET STARTED</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </span>
+                        <span class="btn-border"></span>
+                    </a>
+                    <a href="tel:+919898011309" class="btn-sharp secondary large">
+                        <span class="btn-content">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span class="btn-text">+91 98980 11309</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer-section">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-4" data-aos="fade-up">
+                        <div class="footer-brand">
+                            <div class="brand-wrapper large">
+                                <span class="brand-icon">▲</span>
+                                <span class="brand-text">SUHANI</span>
+                                <span class="brand-sub">INDUSTRIES</span>
+                            </div>
+                            <p class="footer-desc">
+                                Leading manufacturer of precision CNC wood and metal products. Engineering excellence since 2014.
+                            </p>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.suhaniindustries.in" class="social-link"><i class="bi bi-facebook"></i></a>
+                                <a href="https://x.com/intent/post?text=Check%20out%20SUHANI%20INDUSTRIES%E2%80%99s%20website.%20Follow%20the%20latest%20updates%20and%20offers%20regularly.&url=https%3A%2F%2Fwww.suhaniindustries.in" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                                <a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Furl%3Dhttps%3A%2F%2Fwww.suhaniindustries.in" class="social-link"><i class="bi bi-linkedin"></i></a>
+                                <a href="https://www.pinterest.com/pin/create/button/?https://www.suhaniindustries.in" class="social-link"><i class="bi bi-pinterest"></i></a>
+                            </div>
+                        </div>  
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="footer-links-section">
+                            <h4 class="footer-title">QUICK LINKS</h4>
+                            <ul class="footer-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="footer-links-section">
+                            <h4 class="footer-title">SERVICES</h4>
+                            <ul class="footer-links">
+                                <li><a href="services.html#3d-carving">3D Wood Carving</a></li>
+                                <li><a href="services.html#2d-carving">2D CNC Cutting</a></li>
+                                <li><a href="services.html#wave-board">Wave Board Panels</a></li>
+                                <li><a href="services.html#metal-cnc">Metal CNC Work</a></li>
+                                <li><a href="services.html#custom">Custom Designs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="footer-contact">
+                            <h4 class="footer-title">CONTACT INFO</h4>
+                            <div class="contact-items">
+                                <div class="contact-item">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <span>C 26, Anur Estate, opp MM Vora Show Room, Soma Talav Cross Road, Vadodara</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="bi bi-telephone-fill"></i>
+                                    <span>+91 98980 11309</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="bi bi-envelope-fill"></i>
+                                    <span>suhaniindustries09@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; 2024 SUHANI INDUSTRIES. All Rights Reserved.</p>
+                    <p class="credit">ENGINEERED WITH <span class="neon-text">PRECISION</span></p>
+                </div>
+            </div>
+            <div class="footer-neon-line"></div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="bi bi-chevron-up"></i>
+        <span class="progress-ring"></span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
