@@ -6,10 +6,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   "use strict";
 
-  document.getElementById("footer").innerHTML=`
+  document.getElementById("footer").innerHTML = `
   <div class="footer-top">
             <div class="container">
-                <div class="row g-5">
+                <div class="row g-md-5 g-3 gy-4">
                     <div class="col-lg-4" data-aos="fade-up">
                         <div class="footer-brand">
                             <div class="brand-wrapper large">
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
   `;
 
-  document.getElementById("year").textContent=new Date().getFullYear();
+  document.getElementById("year").textContent = new Date().getFullYear();
 
   // ===== CONFIGURATION =====
   const CONFIG = {
@@ -98,12 +98,19 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   // ===== INITIALIZE AOS =====
-  AOS.init({
-    once: true,
-    duration: CONFIG.animationDuration,
-    offset: 100,
-    easing: "ease-out-cubic",
-  });
+  if (typeof AOS !== "undefined") {
+    AOS.init({
+      once: true,
+      duration: CONFIG.animationDuration,
+      offset: 100,
+      easing: "ease-out-cubic",
+    });
+
+    // Refresh AOS after a short delay to ensure injected content is detected
+    setTimeout(() => {
+      AOS.refresh();
+    }, 100);
+  }
 
   // ===== DEVICE DETECTION =====
   function isMobileDevice() {
@@ -143,7 +150,6 @@ document.addEventListener("DOMContentLoaded", function () {
     return function executedFunction() {
       const later = () => {
         clearTimeout(timeout);
-        
       };
       clearTimeout(timeout);
       timeout = setTimeout(later, wait);
@@ -151,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // ===== RESIZE LISTENER =====
-  const handleResize = debounce( CONFIG.debounceDelay);
+  const handleResize = debounce(CONFIG.debounceDelay);
 
   window.addEventListener("resize", handleResize);
 

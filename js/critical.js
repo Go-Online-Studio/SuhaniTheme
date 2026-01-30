@@ -6,8 +6,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   "use strict";
 
-
-  document.getElementById("mainNavbar").innerHTML =`
+  document.getElementById("mainNavbar").innerHTML = `
   <div class="container-fluid px-lg-5">
             <a class="navbar-brand" href="index.html">
                 <img src="images/BrandLogo.webp" alt="Suhani Industries">
@@ -24,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">
+                        <a class="nav-link " href="index.html">
                             <span class="nav-indicator"></span>
                             HOME
                         </a>
@@ -41,10 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
                             SERVICES
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="services.html#3d-carving">3D CARVING</a></li>
-                            <li><a class="dropdown-item" href="services.html#2d-carving">2D CARVING</a></li>
-                            <li><a class="dropdown-item" href="services.html#wave-board">WAVE BOARD</a></li>
-                            <li><a class="dropdown-item" href="services.html#metal-cnc">METAL CNC</a></li>
+                            <li><a class="dropdown-item" href="3d_carving.html">3D CARVING</a></li>
+                            <li><a class="dropdown-item" href="2d_carving.html">2D CARVING</a></li>
+                            <li><a class="dropdown-item" href="wave_board.html">WAVE BOARD</a></li>
+                            <li><a class="dropdown-item" href="metal_cnc.html">METAL CNC</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -69,9 +68,9 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         </div>
         <!-- Neon Line -->
-        <div class="nav-neon-line"></div>`
+        <div class="nav-neon-line"></div>`;
 
-  document.getElementById("mobileMenu").innerHTML =`
+  document.getElementById("mobileMenu").innerHTML = `
   <div class="offcanvas-header">
             <div class="brand-wrapper">
                 <img src="images/BrandLogo.webp" alt="Suhani Industries">
@@ -110,7 +109,30 @@ document.addEventListener("DOMContentLoaded", function () {
                 <a href="#"><i class="bi bi-linkedin"></i></a>
                 <a href="#"><i class="bi bi-youtube"></i></a>
             </div>
-        </div>`
+        </div>`;
+
+  // ===== ACTIVE LINK HANDLING =====
+  function setActiveNavItem() {
+    const currentPage =
+      window.location.pathname.split("/").pop() || "index.html";
+    const navLinks = document.querySelectorAll(
+      ".navbar-nav .nav-link, .mobile-nav a",
+    );
+
+    navLinks.forEach((link) => {
+      // Remove any pre-existing active classes (just in case)
+      link.classList.remove("active");
+
+      const linkHref = link.getAttribute("href");
+
+      // Check for exact match or if it's the home page
+      if (linkHref === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  }
+
+  setActiveNavItem();
 
   // ===== NAVBAR SCROLL BEHAVIOR =====
   const navbar = document.getElementById("mainNavbar");

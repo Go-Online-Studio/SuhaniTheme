@@ -9,9 +9,9 @@
     right: -20px;
   }
   .navbar-nav a.nav-link {
-  font-size: 0.7rem;
-  padding: 8px 15px !important;
-}
+    font-size: 0.7rem;
+    padding: 8px 15px !important;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -43,7 +43,6 @@
   .faq-visual {
     display: none;
   }
-  
 }
 
 @media (max-width: 767.98px) {
@@ -93,21 +92,20 @@
 }
 
 @media (max-width: 575.98px) {
-
-  .footer-section{
+  .footer-section {
     text-align: center;
   }
-  .footer-section .brand-wrapper{
+  .footer-section .brand-wrapper {
     margin-left: auto;
     margin-right: auto;
   }
-  .social-links{
+  .social-links {
     justify-content: center;
   }
-  .addressLi{
+  .addressLi {
     max-width: 216px;
   }
- 
+
   .testimonial-card {
     padding: 30px 20px;
   }
@@ -135,21 +133,19 @@
   .about-image-wrapper {
     padding: 12px 0;
   }
-  .section_padding{
-  padding: 60px 0;
+  .section_padding {
+    padding: 60px 0;
+  }
+  .faq-desc {
+    margin-bottom: 0px;
+  }
+  .faq-header {
+    margin-bottom: 0;
+  }
+  .footer-top {
+    padding: 50px 0 50px;
+  }
 }
-.faq-desc {
-  margin-bottom: 0px;
-}
-.faq-header{
-  margin-bottom: 0;
-}
-.footer-top {
-  padding: 50px 0 50px;
-}
-
-}
-
 
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -157,5 +153,123 @@
   *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* ===== ABOUT PAGE RESPONSIVE ===== */
+
+@media (max-width: 991.98px) {
+ 
+
+  .capabilities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-timeline {
+    padding-left: 20px;
+  }
+
+  .process-step {
+    gap: 20px;
+  }
+
+  .step-number {
+    width: 60px;
+    height: 60px;
+    font-size: 1.4rem;
+  }
+
+  .step-connector {
+    left: 29px;
+    top: 60px;
+  }
+
+  /* Values Section */
+  .value-number {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  .heroPadding{
+    padding-top: calc(50px + var(--nav-height)) !important;
+  }
+
+  .floating-badge {
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+  }
+
+  .badge-number {
+    font-size: 2.2rem;
+  }
+
+  .highlight-item {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .process-step {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .step-connector {
+    display: none;
+  }
+
+  .step-content {
+    padding-top: 0;
+  }
+
+  .stat-box {
+    margin-bottom: 20px;
+  }
+  .mission-card {
+  padding: 20px 12px;
+}
+.capability-item {
+    padding: 20px 12px;
+}
+.process-timeline {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .floating-badge {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    display: block;
+    transform: none !important;
+  }
+
+  .story-highlights {
+    margin-top: 30px;
+  }
+
+  .highlight-item {
+    align-items: center;
+    text-align: center;
+  }
+
+  .value-card {
+    padding: 30px 20px;
   }
 }
