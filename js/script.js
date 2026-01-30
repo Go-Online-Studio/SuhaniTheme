@@ -1,9 +1,93 @@
 /* ========================================
-   SUHANI INDUSTRIES - AGGRESSIVE INDUSTRIAL JS
+   SCRIPT.JS - Common Utilities
+   Shared functionality across all pages
    ======================================== */
 
 document.addEventListener("DOMContentLoaded", function () {
   "use strict";
+
+  document.getElementById("footer").innerHTML=`
+  <div class="footer-top">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-4" data-aos="fade-up">
+                        <div class="footer-brand">
+                            <div class="brand-wrapper large">
+                                <img src="images/BrandLogo.webp" alt="Suhani Industries">
+                            </div>
+                            <p class="footer-desc">
+                                Leading manufacturer of precision CNC wood and metal products. Engineering excellence since 2014.
+                            </p>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.suhaniindustries.in" class="social-link"><i class="bi bi-facebook"></i></a>
+                                <a href="https://x.com/intent/post?text=Check%20out%20SUHANI%20INDUSTRIES%E2%80%99s%20website.%20Follow%20the%20latest%20updates%20and%20offers%20regularly.&url=https%3A%2F%2Fwww.suhaniindustries.in" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                                <a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Furl%3Dhttps%3A%2F%2Fwww.suhaniindustries.in" class="social-link"><i class="bi bi-linkedin"></i></a>
+                                <a href="https://www.pinterest.com/pin/create/button/?https://www.suhaniindustries.in" class="social-link"><i class="bi bi-pinterest"></i></a>
+                            </div>
+                        </div>  
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="footer-links-section">
+                            <h4 class="footer-title">QUICK LINKS</h4>
+                            <ul class="footer-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="footer-links-section">
+                            <h4 class="footer-title">SERVICES</h4>
+                            <ul class="footer-links">
+                                <li><a href="services.html#3d-carving">3D Wood Carving</a></li>
+                                <li><a href="services.html#2d-carving">2D CNC Cutting</a></li>
+                                <li><a href="services.html#wave-board">Wave Board Panels</a></li>
+                                <li><a href="services.html#metal-cnc">Metal CNC Work</a></li>
+                                <li><a href="services.html#custom">Custom Designs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="footer-contact">
+                            <h4 class="footer-title">CONTACT INFO</h4>
+                            <div class="contact-items">
+                                <div class="contact-item justify-content-center justify-content-sm-start">
+                                    <i class="col-auto bi bi-geo-alt-fill"></i>
+                                    <a class="footer_link addressLi" target="_blank" href="https://maps.app.goo.gl/8vjM2JHNBQABogpQ7"><address>C 26, Anur Estate, opp MM Vora Show Room, Soma Talav Cross Road, Vadodara</address></a>
+                                </div>
+                                <div class="contact-item justify-content-center justify-content-sm-start">
+                                    <i class="col-auto bi bi-telephone-fill"></i>
+                                    <a class="footer_link" href="tel:+919898011309">+91 98980 11309</a>
+                                </div>
+                                <div class="contact-item justify-content-center justify-content-sm-start">
+                                    <i class="col-auto bi bi-envelope-fill"></i>
+                                    <a class="footer_link" href="mailto:suhaniindustries09@gmail.com">suhaniindustries09@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; <span id="year"></span> SUHANI INDUSTRIES. All Rights Reserved.</p>
+                    <p class="credit">ENGINEERED WITH <span class="neon-text">PRECISION</span> by <span class="neon-text">STS</span></p>
+                </div> 
+            </div>
+            <div class="footer-neon-line"></div>
+        </div>
+  `;
+
+  document.getElementById("year").textContent=new Date().getFullYear();
 
   // ===== CONFIGURATION =====
   const CONFIG = {
@@ -19,213 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
     duration: CONFIG.animationDuration,
     offset: 100,
     easing: "ease-out-cubic",
-  });
-
-  // ===== NAVBAR SCROLL BEHAVIOR =====
-  const navbar = document.getElementById("mainNavbar");
-  const navHeight = 100;
-
-  function handleNavbarScroll() {
-    if (window.scrollY > navHeight) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
-    }
-  }
-
-  window.addEventListener("scroll", handleNavbarScroll);
-  handleNavbarScroll();
-
-  // ===== HERO SWIPER =====
-  const heroSwiper = new Swiper(".heroSwiper", {
-    loop: true,
-    speed: 1000,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    effect: "fade",
-    fadeEffect: {
-      crossFade: true,
-    },
-    pagination: {
-      el: ".heroSwiper .swiper-pagination",
-      clickable: true,
-    },
-    on: {
-      slideChange: function () {
-        AOS.refresh();
-      },
-    },
-  });
-
-  // ===== SERVICES SWIPER =====
-  let currentSlide = 1;
-  const totalSlides = 5;
-
-  const servicesSwiper = new Swiper(".servicesSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-    breakpoints: {
-      640: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 },
-    },
-    on: {
-      slideChange: function () {
-        currentSlide = this.realIndex + 1;
-        updateSlideCounter();
-      },
-    },
-  });
-
-  // Custom navigation
-  const prevBtn = document.querySelector(".services-nav .nav-btn.prev");
-  const nextBtn = document.querySelector(".services-nav .nav-btn.next");
-
-  if (prevBtn && nextBtn) {
-    prevBtn.addEventListener("click", () => servicesSwiper.slidePrev());
-    nextBtn.addEventListener("click", () => servicesSwiper.slideNext());
-  }
-
-  function updateSlideCounter() {
-    const currentEl = document.querySelector(".nav-counter .current");
-    if (currentEl) {
-      currentEl.textContent = String(currentSlide).padStart(2, "0");
-    }
-  }
-
-  // ===== TESTIMONIALS SWIPER =====
-  const testimonialsSwiper = new Swiper(".testimonialsSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".testimonialsSwiper .swiper-pagination",
-      clickable: true,
-    },
-  });
-
-  // ===== ISOTOPE GALLERY =====
-  const galleryGrid = document.querySelector(".gallery-grid");
-  let iso;
-
-  if (galleryGrid) {
-    imagesLoaded(galleryGrid, function () {
-      iso = new Isotope(galleryGrid, {
-        itemSelector: ".gallery-item",
-        layoutMode: "fitRows",
-        percentPosition: true,
-        transitionDuration: "0.5s",
-      });
-    });
-  }
-
-  const filterButtons = document.querySelectorAll(".filter-btn");
-
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      filterButtons.forEach((btn) => btn.classList.remove("active"));
-      this.classList.add("active");
-
-      const filterValue = this.getAttribute("data-filter");
-      if (iso) {
-        iso.arrange({ filter: filterValue });
-      }
-    });
-  });
-
-  // ===== FANCYBOX INITIALIZATION =====
-  if (typeof Fancybox !== "undefined") {
-    Fancybox.bind('[data-fancybox="gallery"]', {
-      Thumbs: { autoStart: false },
-      Toolbar: {
-        display: ["zoom", "slideshow", "fullscreen", "download", "close"],
-      },
-    });
-  }
-
-  // ===== COUNTER ANIMATION =====
-  const statNumbers = document.querySelectorAll(".stat-number");
-  let countersAnimated = false;
-
-  function animateCounters() {
-    if (countersAnimated) return;
-
-    statNumbers.forEach((counter) => {
-      const target = parseInt(counter.getAttribute("data-count"));
-      const duration = CONFIG.counterDuration;
-      const startTime = performance.now();
-
-      function updateCounter(currentTime) {
-        const elapsed = currentTime - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        const easeOut = 1 - Math.pow(1 - progress, 3);
-        const current = Math.floor(target * easeOut);
-
-        counter.textContent = current;
-
-        if (progress < 1) {
-          requestAnimationFrame(updateCounter);
-        } else {
-          counter.textContent = target;
-        }
-      }
-
-      requestAnimationFrame(updateCounter);
-    });
-
-    countersAnimated = true;
-  }
-
-  const statsSection = document.getElementById("stats");
-
-  if (statsSection) {
-    const statsObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            animateCounters();
-            statsObserver.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.3 },
-    );
-
-    statsObserver.observe(statsSection);
-  }
-
-  // ===== CUSTOM ACCORDION =====
-  const accordionTriggers = document.querySelectorAll(".accordion-trigger");
-
-  accordionTriggers.forEach((trigger) => {
-    trigger.addEventListener("click", function () {
-      const targetId = this.getAttribute("data-target");
-      const content = document.getElementById(targetId);
-      const isActive = this.classList.contains("active");
-
-      // Close all accordions
-      accordionTriggers.forEach((t) => {
-        t.classList.remove("active");
-        const c = document.getElementById(t.getAttribute("data-target"));
-        if (c) c.classList.remove("show");
-      });
-
-      // Open clicked if it wasn't active
-      if (!isActive && content) {
-        this.classList.add("active");
-        content.classList.add("show");
-      }
-    });
   });
 
   // ===== DEVICE DETECTION =====
@@ -261,12 +138,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // ===== DEBOUNCE FUNCTION =====
-  function debounce(func, wait) {
+  function debounce(wait) {
     let timeout;
-    return function executedFunction(...args) {
+    return function executedFunction() {
       const later = () => {
         clearTimeout(timeout);
-        func(...args);
+        
       };
       clearTimeout(timeout);
       timeout = setTimeout(later, wait);
@@ -274,9 +151,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // ===== RESIZE LISTENER =====
-  const handleResize = debounce(function () {
-    console.log("Device type:", isMobileDevice() ? "Mobile" : "Desktop");
-  }, CONFIG.debounceDelay);
+  const handleResize = debounce( CONFIG.debounceDelay);
 
   window.addEventListener("resize", handleResize);
 
@@ -300,28 +175,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
-  const anchorLinks = document.querySelectorAll('a[href^="#"]');
-
-  anchorLinks.forEach((link) => {
-    link.addEventListener("click", function (e) {
-      const href = this.getAttribute("href");
-      if (href === "#") {
-        e.preventDefault();
-        return;
-      }
-
-      const target = document.querySelector(href);
-      if (target) {
-        e.preventDefault();
-        const navHeight = navbar.offsetHeight;
-        const targetPosition =
-          target.getBoundingClientRect().top + window.scrollY - navHeight;
-        window.scrollTo({ top: targetPosition, behavior: "smooth" });
-      }
-    });
-  });
-
   // ===== GLITCH TEXT EFFECT =====
   const glitchTexts = document.querySelectorAll(".glitch-text");
 
@@ -333,14 +186,4 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 300);
     });
   });
-
-  // ===== LOG INITIALIZATION =====
-  console.log(
-    "%c SUHANI INDUSTRIES ",
-    "background: #FF0A0A; color: #000; font-family: monospace; font-size: 20px; padding: 10px;",
-  );
-  console.log(
-    "Industrial Website Initialized | Device:",
-    isMobileDevice() ? "Mobile" : "Desktop",
-  );
 });

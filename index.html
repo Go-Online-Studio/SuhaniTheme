@@ -5,18 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Suhani Industries - Precision CNC Machining, 3D Wood Carving, Metal Works & Custom Fabrication. Experience cutting-edge manufacturing excellence.">
     <title>Suhani Industries | Precision CNC & Manufacturing Excellence</title>
-    
+    <link rel="icon" href="images/Fevicon.png" type="image/png" fetchpriority="low">
+
+    <link rel="preload" as="image" href="images/BrandLogo.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1920&q=80" fetchpriority="high">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1920&q=80" fetchpriority="high">
+     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:wght@300;400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" as="style" href="css/style.css" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" as="style" href="css/responsive.css" onload="this.onload=null;this.rel='stylesheet'">
+
     
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    
+     
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     
@@ -26,111 +34,17 @@
     <!-- Fancybox CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
     
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
-    <!-- Hex Grid Background Texture -->
-    <div class="hex-grid-overlay"></div>
     
     <!-- ========== NAVIGATION - MULTI-PAGE ========== -->
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
-        <div class="container-fluid px-lg-5">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/BrandLogo.webp" alt="Suhani Industries">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </button>
-            
-            <!-- Desktop Menu -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">
-                            <span class="nav-indicator"></span>
-                            HOME
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">
-                            <span class="nav-indicator"></span>
-                            ABOUT
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="services.html" data-bs-toggle="dropdown">
-                            <span class="nav-indicator"></span>
-                            SERVICES
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="services.html#3d-carving">3D CARVING</a></li>
-                            <li><a class="dropdown-item" href="services.html#2d-carving">2D CARVING</a></li>
-                            <li><a class="dropdown-item" href="services.html#wave-board">WAVE BOARD</a></li>
-                            <li><a class="dropdown-item" href="services.html#metal-cnc">METAL CNC</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">
-                            <span class="nav-indicator"></span>
-                            GALLERY
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">
-                            <span class="nav-indicator"></span>
-                            CONTACT
-                        </a>
-                    </li>
-                    <li class="nav-item nav-cta">
-                        <a class="btn-neon" href="contact.html">
-                            <span class="btn-text">GET QUOTE</span>
-                            <span class="btn-glitch"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- Neon Line -->
-        <div class="nav-neon-line"></div>
+
     </nav>
 
     <!-- Mobile Offcanvas Menu -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
-        <div class="offcanvas-header">
-            <div class="brand-wrapper">
-                <span class="brand-icon">▲</span>
-                <span class="brand-text">SUHANI</span>
-            </div>
-            <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas">
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-        <div class="offcanvas-body">
-            <ul class="mobile-nav">
-                <li><a href="index.html" class="active">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="services.html">SERVICES</a></li>
-                <li><a href="gallery.html">GALLERY</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-            <a href="contact.html" class="btn-neon mobile-cta">
-                <span class="btn-text">GET QUOTE</span>
-            </a>
-        </div>
-        <div class="offcanvas-footer">
-            <div class="social-links">
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-youtube"></i></a>
-            </div>
-        </div>
     </div>
 
     <!-- ========== HERO SECTION - AGGRESSIVE GEOMETRY ========== -->
@@ -289,7 +203,7 @@
     </section>
 
     <!-- ========== STATS SECTION - SLASHED GEOMETRY ========== -->
-    <section id="stats" class="stats-section">
+    <section id="stats" class="stats-section section_padding">
         <div class="circuit-pattern"></div>
         
         <div class="container">
@@ -371,7 +285,7 @@
     </section>
 
     <!-- ========== ABOUT SECTION - OVERLAPPING ELEMENTS ========== -->
-    <section id="about" class="about-section">
+    <section id="about" class="about-section section_padding">
         <div class="dotted-pattern"></div>
         
         <div class="container">
@@ -379,7 +293,7 @@
                 <div class="col-lg-6 order-lg-2" data-aos="fade-left">
                     <div class="about-image-wrapper">
                         <div class="image-frame">
-                            <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&q=80" alt="CNC Machine">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&q=80" alt="CNC Machine">
                             <div class="image-overlay"></div>
                             <div class="corner-accent tl"></div>
                             <div class="corner-accent br"></div>
@@ -461,7 +375,7 @@
     </section>
 
     <!-- ========== SERVICES SECTION - GLASSMORPHISM CARDS ========== -->
-    <section id="services" class="services-section">
+    <section id="services" class="services-section section_padding">
         <div class="hex-pattern"></div>
         
         <div class="container">
@@ -483,7 +397,7 @@
                         <div class="swiper-slide">
                             <div class="service-card">
                                 <div class="card-image">
-                                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="3D Carving">
+                                    <img loading="lazy" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="3D Carving">
                                     <div class="image-scanline"></div>
                                     <div class="card-number">01</div>
                                 </div>
@@ -502,7 +416,7 @@
                         <div class="swiper-slide">
                             <div class="service-card">
                                 <div class="card-image">
-                                    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80" alt="2D Carving">
+                                    <img loading="lazy" src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80" alt="2D Carving">
                                     <div class="image-scanline"></div>
                                     <div class="card-number">02</div>
                                 </div>
@@ -521,7 +435,7 @@
                         <div class="swiper-slide">
                             <div class="service-card">
                                 <div class="card-image">
-                                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&q=80" alt="Wave Board">
+                                    <img loading="lazy" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&q=80" alt="Wave Board">
                                     <div class="image-scanline"></div>
                                     <div class="card-number">03</div>
                                 </div>
@@ -540,7 +454,7 @@
                         <div class="swiper-slide">
                             <div class="service-card">
                                 <div class="card-image">
-                                    <img src="https://images.unsplash.com/photo-1611117775350-ac3950990985?w=600&q=80" alt="Wooden Legs">
+                                    <img loading="lazy" src="https://images.unsplash.com/photo-1611117775350-ac3950990985?w=600&q=80" alt="Wooden Legs">
                                     <div class="image-scanline"></div>
                                     <div class="card-number">04</div>
                                 </div>
@@ -559,7 +473,7 @@
                         <div class="swiper-slide">
                             <div class="service-card">
                                 <div class="card-image">
-                                    <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=600&q=80" alt="Metal CNC">
+                                    <img loading="lazy" src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=600&q=80" alt="Metal CNC">
                                     <div class="image-scanline"></div>
                                     <div class="card-number">05</div>
                                 </div>
@@ -606,7 +520,7 @@
     </section>
 
     <!-- ========== GALLERY SECTION - AGGRESSIVE GRID ========== -->
-    <section id="gallery" class="gallery-section">
+    <section id="gallery" class="gallery-section section_padding">
         <div class="grid-lines"></div>
         
         <div class="container">
@@ -648,7 +562,7 @@
                 <div class="gallery-item wood">
                     <a href="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80" data-fancybox="gallery" data-caption="Intricate Wood Carving Panel">
                         <div class="item-image">
-                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Wood Carving">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Wood Carving">
                             <div class="item-overlay">
                                 <div class="overlay-content">
                                     <span class="item-category">WOOD</span>
@@ -667,7 +581,7 @@
                 <div class="gallery-item metal three-d">
                     <a href="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1200&q=80" data-fancybox="gallery" data-caption="CNC Metal Component">
                         <div class="item-image">
-                            <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=600&q=80" alt="Metal CNC">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=600&q=80" alt="Metal CNC">
                             <div class="item-overlay">
                                 <div class="overlay-content">
                                     <span class="item-category">METAL</span>
@@ -686,7 +600,7 @@
                 <div class="gallery-item wood three-d">
                     <a href="https://images.unsplash.com/photo-1611117775350-ac3950990985?w=1200&q=80" data-fancybox="gallery" data-caption="3D Wooden Sculpture">
                         <div class="item-image">
-                            <img src="https://images.unsplash.com/photo-1611117775350-ac3950990985?w=600&q=80" alt="3D Sculpture">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1611117775350-ac3950990985?w=600&q=80" alt="3D Sculpture">
                             <div class="item-overlay">
                                 <div class="overlay-content">
                                     <span class="item-category">3D</span>
@@ -705,7 +619,7 @@
                 <div class="gallery-item metal">
                     <a href="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1200&q=80" data-fancybox="gallery" data-caption="Precision Metal Parts">
                         <div class="item-image">
-                            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80" alt="Metal Parts">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80" alt="Metal Parts">
                             <div class="item-overlay">
                                 <div class="overlay-content">
                                     <span class="item-category">METAL</span>
@@ -724,7 +638,7 @@
                 <div class="gallery-item wood">
                     <a href="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&q=80" data-fancybox="gallery" data-caption="Wave Board Design">
                         <div class="item-image">
-                            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&q=80" alt="Wave Board">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&q=80" alt="Wave Board">
                             <div class="item-overlay">
                                 <div class="overlay-content">
                                     <span class="item-category">WOOD</span>
@@ -743,7 +657,7 @@
                 <div class="gallery-item three-d metal">
                     <a href="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&q=80" data-fancybox="gallery" data-caption="Industrial Component">
                         <div class="item-image">
-                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80" alt="Industrial">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80" alt="Industrial">
                             <div class="item-overlay">
                                 <div class="overlay-content">
                                     <span class="item-category">INDUSTRIAL</span>
@@ -773,7 +687,7 @@
     </section>
 
     <!-- ========== FAQ SECTION ========== -->
-    <section id="faq" class="faq-section">
+    <section id="faq" class="faq-section section_padding">
         <div class="circuit-pattern"></div>
         
         <div class="container">
@@ -868,7 +782,7 @@
     </section>
 
     <!-- ========== TESTIMONIALS SECTION ========== -->
-    <section id="testimonials" class="testimonials-section">
+    <section id="testimonials" class="testimonials-section section_padding">
         <div class="grid-lines"></div>
         
         <div class="container">
@@ -975,15 +889,16 @@
                     </div>
                 </div>
                 
-                <div class="testimonials-pagination">
-                    <div class="swiper-pagination"></div>
-                </div>
+               
             </div>
+             <div class="testimonials-pagination">
+                    <div class="swiper-pagination testimonialDots"></div>
+                </div>
         </div>
     </section>
 
     <!-- ========== CTA SECTION ========== -->
-    <section id="cta" class="cta-section">
+    <section id="cta" class="cta-section section_padding">
         <div class="cta-bg"></div>
         <div class="cta-overlay"></div>
         <div class="geometric-shapes">
@@ -1020,16 +935,14 @@
     </section>
 
     <!-- ========== FOOTER ========== -->
-    <footer class="footer-section">
-        <div class="footer-top">
+    <footer class="footer-section" id="footer">
+        <!-- <div class="footer-top">
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-4" data-aos="fade-up">
                         <div class="footer-brand">
                             <div class="brand-wrapper large">
-                                <span class="brand-icon">▲</span>
-                                <span class="brand-text">SUHANI</span>
-                                <span class="brand-sub">INDUSTRIES</span>
+                                <img src="images/BrandLogo.webp" alt="Suhani Industries">
                             </div>
                             <p class="footer-desc">
                                 Leading manufacturer of precision CNC wood and metal products. Engineering excellence since 2014.
@@ -1043,7 +956,7 @@
                         </div>  
                     </div>
                     
-                    <div class="col-lg-2 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-2 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="footer-links-section">
                             <h4 class="footer-title">QUICK LINKS</h4>
                             <ul class="footer-links">
@@ -1056,7 +969,7 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="footer-links-section">
                             <h4 class="footer-title">SERVICES</h4>
                             <ul class="footer-links">
@@ -1069,21 +982,21 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="footer-contact">
                             <h4 class="footer-title">CONTACT INFO</h4>
                             <div class="contact-items">
-                                <div class="contact-item">
-                                    <i class="bi bi-geo-alt-fill"></i>
-                                    <span>C 26, Anur Estate, opp MM Vora Show Room, Soma Talav Cross Road, Vadodara</span>
+                                <div class="contact-item justify-content-center justify-content-sm-start">
+                                    <i class="col-auto bi bi-geo-alt-fill"></i>
+                                    <a class="footer_link addressLi" target="_blank" href="https://maps.app.goo.gl/8vjM2JHNBQABogpQ7"><address>C 26, Anur Estate, opp MM Vora Show Room, Soma Talav Cross Road, Vadodara</address></a>
                                 </div>
-                                <div class="contact-item">
-                                    <i class="bi bi-telephone-fill"></i>
-                                    <span>+91 98980 11309</span>
+                                <div class="contact-item justify-content-center justify-content-sm-start">
+                                    <i class="col-auto bi bi-telephone-fill"></i>
+                                    <a class="footer_link" href="tel:+919898011309">+91 98980 11309</a>
                                 </div>
-                                <div class="contact-item">
-                                    <i class="bi bi-envelope-fill"></i>
-                                    <span>suhaniindustries09@gmail.com</span>
+                                <div class="contact-item justify-content-center justify-content-sm-start">
+                                    <i class="col-auto bi bi-envelope-fill"></i>
+                                    <a class="footer_link" href="mailto:suhaniindustries09@gmail.com">suhaniindustries09@gmail.com</a>
                                 </div>
                             </div>
                         </div>
@@ -1095,12 +1008,12 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="footer-bottom-content">
-                    <p class="copyright">&copy; 2024 SUHANI INDUSTRIES. All Rights Reserved.</p>
-                    <p class="credit">ENGINEERED WITH <span class="neon-text">PRECISION</span></p>
-                </div>
+                    <p class="copyright">&copy; <span id="year"></span> SUHANI INDUSTRIES. All Rights Reserved.</p>
+                    <p class="credit">ENGINEERED WITH <span class="neon-text">PRECISION</span> by <span class="neon-text">STS</span></p>
+                </div> 
             </div>
             <div class="footer-neon-line"></div>
-        </div>
+        </div> -->
     </footer>
 
     <!-- Back to Top Button -->
@@ -1110,12 +1023,224 @@
     </a>
 
     <!-- Scripts -->
+    <!-- Critical JS - Load First -->
+    <script src="js/critical.js"></script>
+    
+    <!-- Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    
+    <!-- Common Utilities -->
     <script src="js/script.js"></script>
+    
+    <!-- Page-Specific JS -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        "use strict";
+
+        // ===== HERO SWIPER =====
+        const heroSwiper = new Swiper(".heroSwiper", {
+          loop: true,
+          speed: 1000,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          effect: "fade",
+          fadeEffect: {
+            crossFade: true,
+          },
+          pagination: {
+            el: ".heroSwiper .swiper-pagination",
+            clickable: true,
+          },
+          on: {
+            slideChange: function () {
+              AOS.refresh();
+            },
+          },
+        });
+
+        // ===== SERVICES SWIPER =====
+        let currentSlide = 1;
+        const totalSlides = 5;
+
+        const servicesSwiper = new Swiper(".servicesSwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+          },
+          breakpoints: {
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          },
+          on: {
+            slideChange: function () {
+              currentSlide = this.realIndex + 1;
+              updateSlideCounter();
+            },
+          },
+        });
+
+        // Custom navigation
+        const prevBtn = document.querySelector(".services-nav .nav-btn.prev");
+        const nextBtn = document.querySelector(".services-nav .nav-btn.next");
+
+        if (prevBtn && nextBtn) {
+          prevBtn.addEventListener("click", () => servicesSwiper.slidePrev());
+          nextBtn.addEventListener("click", () => servicesSwiper.slideNext());
+        }
+
+        function updateSlideCounter() {
+          const currentEl = document.querySelector(".nav-counter .current");
+          if (currentEl) {
+            currentEl.textContent = String(currentSlide).padStart(2, "0");
+          }
+        }
+
+        // ===== TESTIMONIALS SWIPER =====
+        const testimonialsSwiper = new Swiper(".testimonialsSwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".testimonials-pagination .testimonialDots",
+            clickable: true,
+          },
+        });
+
+        // ===== ISOTOPE GALLERY =====
+        const galleryGrid = document.querySelector(".gallery-grid");
+        let iso;
+
+        if (galleryGrid) {
+          imagesLoaded(galleryGrid, function () {
+            iso = new Isotope(galleryGrid, {
+              itemSelector: ".gallery-item",
+              layoutMode: "fitRows",
+              percentPosition: true,
+              transitionDuration: "0.5s",
+            });
+          });
+        }
+
+        const filterButtons = document.querySelectorAll(".filter-btn");
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active");
+
+            const filterValue = this.getAttribute("data-filter");
+            if (iso) {
+              iso.arrange({ filter: filterValue });
+            }
+          });
+        });
+
+        // ===== FANCYBOX INITIALIZATION =====
+        if (typeof Fancybox !== "undefined") {
+          Fancybox.bind('[data-fancybox="gallery"]', {
+            Thumbs: {
+              autoStart: false,
+            },
+            Toolbar: {
+              display: {
+                left: ["infobar"],
+                middle: [],
+                right: ["zoom", "slideshow", "fullscreen", "download", "close"],
+              },
+            },
+          });
+        }
+
+        // ===== COUNTER ANIMATION =====
+        const statNumbers = document.querySelectorAll(".stat-number");
+        let countersAnimated = false;
+
+        function animateCounters() {
+          if (countersAnimated) return;
+
+          statNumbers.forEach((counter) => {
+            const target = parseInt(counter.getAttribute("data-count"));
+            const duration = 2000;
+            const startTime = performance.now();
+
+            function updateCounter(currentTime) {
+              const elapsed = currentTime - startTime;
+              const progress = Math.min(elapsed / duration, 1);
+              const easeOut = 1 - Math.pow(1 - progress, 3);
+              const current = Math.floor(target * easeOut);
+
+              counter.textContent = current;
+
+              if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+              } else {
+                counter.textContent = target;
+              }
+            }
+
+            requestAnimationFrame(updateCounter);
+          });
+
+          countersAnimated = true;
+        }
+
+        const statsSection = document.getElementById("stats");
+
+        if (statsSection) {
+          const statsObserver = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  animateCounters();
+                  statsObserver.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.3 },
+          );
+
+          statsObserver.observe(statsSection);
+        }
+
+        // ===== CUSTOM ACCORDION =====
+        const accordionTriggers = document.querySelectorAll(".accordion-trigger");
+
+        accordionTriggers.forEach((trigger) => {
+          trigger.addEventListener("click", function () {
+            const targetId = this.getAttribute("data-target");
+            const content = document.getElementById(targetId);
+            const isActive = this.classList.contains("active");
+
+            // Close all accordions
+            accordionTriggers.forEach((t) => {
+              t.classList.remove("active");
+              const c = document.getElementById(t.getAttribute("data-target"));
+              if (c) c.classList.remove("show");
+            });
+
+            // Open clicked if it wasn't active
+            if (!isActive && content) {
+              this.classList.add("active");
+              content.classList.add("show");
+            }
+          });
+        });
+      });
+    </script>
+    
 </body>
 </html>
