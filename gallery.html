@@ -120,7 +120,7 @@
             <div class="gallery-grid galleryPage0" id="galleryGrid">
                 
                 <!-- Item 1: 3D Carving (Portrait) -->
-                <div class="gallery-item carving-3d" style="width: 33.33%;">
+                <div class="gallery-item carving-3d GalleryMainItems" >
                     <a href="images/gallery/GalleryImages1.jpg" data-fancybox="gallery" data-caption="Intricate 3D Wood Carving">
                         <div class="item-image" style="aspect-ratio: 3/4;">
                             <img loading="lazy" src="images/gallery/thumb/GalleryImages1.webp" alt="3D Wood Carving"> 
@@ -138,7 +138,7 @@
                 </div>
 
                 <!-- Item 2: Wave Board (Portrait) -->
-                <div class="gallery-item wave-board" style="width: 33.33%;">
+                <div class="gallery-item wave-board GalleryMainItems" >
                     <a href="images/gallery/GalleryImages2.jpg" data-fancybox="gallery" data-caption="Parametric Wave Panel">
                         <div class="item-image" style="aspect-ratio: 3/4;">
                             <img loading="lazy" src="images/gallery/thumb/GalleryImages2.webp" alt="Wave Board">
@@ -156,7 +156,7 @@
                 </div>
 
                 <!-- Item 3: Metal CNC (Portrait) -->
-                <div class="gallery-item metal-cnc" style="width: 33.33%;">
+                <div class="gallery-item metal-cnc GalleryMainItems" >
                     <a href="images/gallery/GalleryImages3.jpg" data-fancybox="gallery" data-caption="Precision Metal Part">
                         <div class="item-image" style="aspect-ratio: 3/4;">
                             <img loading="lazy" src="images/gallery/thumb/GalleryImages3.webp" alt="Metal CNC">
@@ -174,7 +174,7 @@
                 </div>
 
                 <!-- Item 4: 2D Carving (Portrait) -->
-                <div class="gallery-item carving-2d" style="width: 33.33%;">
+                <div class="gallery-item carving-2d GalleryMainItems" >
                     <a href="images/gallery/GalleryImages4.jpg" data-fancybox="gallery" data-caption="Geometric Screen">
                         <div class="item-image" style="aspect-ratio: 3/4;">
                             <img loading="lazy" src="images/gallery/thumb/GalleryImages4.webp" alt="2D Carving">
@@ -192,7 +192,7 @@
                 </div>
 
                 <!-- Item 5: Wave Board (Portrait) -->
-                <div class="gallery-item wave-board" style="width: 33.33%;">
+                <div class="gallery-item wave-board GalleryMainItems" >
                     <a href="images/gallery/GalleryImages5.jpg" data-fancybox="gallery" data-caption="Abstract Wave Texture">
                         <div class="item-image" style="aspect-ratio: 3/4;">
                             <img loading="lazy" src="images/gallery/thumb/GalleryImages5.webp" alt="Wave Board Texture">
@@ -210,7 +210,7 @@
                 </div>
 
                 <!-- Item 6: 3D Carving (Portrait) -->
-                <div class="gallery-item carving-3d" style="width: 33.33%;">
+                <div class="gallery-item carving-3d GalleryMainItems" >
                     <a href="images/gallery/GalleryImages6.jpg" data-fancybox="gallery" data-caption="Ornamental Design">
                         <div class="item-image" style="aspect-ratio: 3/4;">
                             <img loading="lazy" src="images/gallery/thumb/GalleryImages6.webp" alt="Ornamental Carving">
@@ -228,7 +228,7 @@
                 </div>
                 
                  <!-- Item 7: Metal CNC -->
-                <div class="gallery-item metal-cnc" style="width: 33.33%;">
+                <div class="gallery-item metal-cnc GalleryMainItems" >
                     <a href="images/gallery/GalleryImages7.jpg" data-fancybox="gallery" data-caption="Industrial Metal Part">
                         <div class="item-image" style="aspect-ratio: 3/4;">
                             <img loading="lazy" src="images/gallery/thumb/GalleryImages7.webp" alt="Industrial Metal">
@@ -246,7 +246,7 @@
                 </div>
 
                  <!-- Item 8: 2D Carving -->
-                <div class="gallery-item carving-2d" style="width: 33.33%;">
+                <div class="gallery-item carving-2d GalleryMainItems" >
                     <a href="images/gallery/GalleryImages8.jpg" data-fancybox="gallery" data-caption="Modern Partition">
                         <div class="item-image" style="aspect-ratio: 3/4;">
                             <img loading="lazy" src="images/gallery/thumb/GalleryImages8.webp" alt="Partition Design">
@@ -264,7 +264,7 @@
                 </div>
                 
                  <!-- Item 9: Wave Board -->
-                <div class="gallery-item wave-board" style="width: 33.33%;">
+                <div class="gallery-item wave-board GalleryMainItems" >
                     <a href="images/gallery/GalleryImages9.jpg" data-fancybox="gallery" data-caption="Texture Wall Panel">
                         <div class="item-image" style="aspect-ratio: 3/4;">
                             <img loading="lazy" src="images/gallery/thumb/GalleryImages9.webp" alt="Texture Wall">
@@ -286,6 +286,7 @@
     </section>
 
     <!-- ========== CTA SECTION ========== -->
+    
     <section id="cta" class="cta-section section_padding">
         <div class="cta-bg"></div>
         <div class="cta-overlay"></div>
@@ -306,7 +307,7 @@
                 <div class="cta-buttons">
                     <a href="contact.html" class="btn-sharp primary large">
                         <span class="btn-content">
-                            <span class="btn-text">GET A QUOTE</span>
+                            <span class="btn-text">GET STARTED</span>
                             <i class="bi bi-arrow-right"></i>
                         </span>
                         <span class="btn-border"></span>
@@ -357,15 +358,22 @@
         let iso;
 
         if (galleryGrid) {
-          imagesLoaded(galleryGrid, function () {
-            iso = new Isotope(galleryGrid, {
-              itemSelector: ".gallery-item",
-              layoutMode: "masonry", // Changed to masonry for vertical stack
-              percentPosition: true,
-              masonry: {
-                columnWidth: '.gallery-item'
-              }
-            });
+          // Initialize Isotope immediately to prevent rendering delays
+          iso = new Isotope(galleryGrid, {
+            itemSelector: ".gallery-item",
+            layoutMode: "masonry",
+            percentPosition: true,
+            masonry: {
+              columnWidth: '.gallery-item'
+            }
+          });
+
+          // update layout after each image loads
+          imagesLoaded(galleryGrid).on('progress', function () {
+            iso.layout();
+            if (typeof AOS !== 'undefined') {
+                AOS.refresh();
+            }
           });
         }
 

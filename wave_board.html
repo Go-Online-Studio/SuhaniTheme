@@ -198,6 +198,10 @@
                 </h2>
             </div>
 
+
+            
+            
+
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="service-card">
@@ -209,9 +213,10 @@
                         <div class="card-content">
                             <h3 class="card-title">Geometric Diamond Wave</h3>
                             <p class="card-desc">Sharp angular ridges for a futuristic look.</p>
-                            <a href="#" class="btn-service">
-                                View Specs
+                            <a href="product-view.html?id=wave-board" class="btn btn-service">
+                                View Details
                             </a>
+
                         </div>
                         <div class="card-accent"></div>
                     </div>
@@ -226,8 +231,8 @@
                         <div class="card-content">
                             <h3 class="card-title">Fluid River Pattern</h3>
                             <p class="card-desc">Organic, soft flowing lines mimicking water.</p>
-                            <a href="#" class="btn-service">
-                                View Specs
+                            <a href="product-view.html?id=cnc-jali" class="btn btn-service">
+                                View Details
                             </a>
                         </div>
                         <div class="card-accent"></div>
@@ -353,9 +358,9 @@
           countersAnimated = true;
         }
 
-        const whySection = document.getElementById("why-choose");
+        const valuesSection = document.getElementById("values");
 
-        if (whySection) {
+        if (valuesSection) {
           const statsObserver = new IntersectionObserver(
             (entries) => {
               entries.forEach((entry) => {
@@ -368,7 +373,7 @@
             { threshold: 0.3 },
           );
 
-          statsObserver.observe(whySection);
+          statsObserver.observe(valuesSection);
         }
       });
     </script>

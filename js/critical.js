@@ -47,6 +47,12 @@ document.addEventListener("DOMContentLoaded", function () {
                         </ul>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="updates.html">
+                            <span class="nav-indicator"></span>
+                            UPDATES
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="gallery.html">
                             <span class="nav-indicator"></span>
                             GALLERY
@@ -95,6 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <li><a class="dropdown-item" href="services.html#metal-cnc">METAL CNC</a></li>
                     </ul>
                 </li>
+                <li><a href="updates.html">UPDATES</a></li>
                 <li><a href="gallery.html">GALLERY</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
@@ -104,10 +111,10 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
         <div class="offcanvas-footer">
             <div class="social-links">
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.suhaniindustries.in"><i class="bi bi-facebook"></i></a>
+                <a target="_blank" href="https://x.com/intent/post?text=Check%20out%20SUHANI%20INDUSTRIES%E2%80%99s%20website.%20Follow%20the%20latest%20updates%20and%20offers%20regularly.&url=https%3A%2F%2Fwww.suhaniindustries.in"><i class="bi bi-twitter-x"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Furl%3Dhttps%3A%2F%2Fwww.suhaniindustries.in"><i class="bi bi-linkedin"></i></a>
+                <a target="_blank" href="https://www.pinterest.com/pin/create/button/?https://www.suhaniindustries.in"><i class="bi bi-pinterest"></i></a>
             </div>
         </div>`;
 
@@ -192,6 +199,12 @@ document.addEventListener("DOMContentLoaded", function () {
   anchorLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
       const href = this.getAttribute("href");
+      // FIX: Ignore links that don't start with # (like WhatsApp/LinkedIn)
+      
+      if (!href.startsWith("#")) { 
+          return; 
+      }
+
       if (href === "#") {
         e.preventDefault();
         return;
@@ -208,3 +221,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "wave-board",
+    "name": "Architectural Wave Board",
+    "category": "3D Wall Panels",
+    "shortDesc": "Premium CNC-sculpted textures for high-end interiors.",
+    "fullDesc": "Transform plain walls into dynamic architectural features. Our Wave Boards are precision-carved using 3-axis CNC technology to create seamless, flowing patterns that play with light and shadow.",
+    "specs": {
+      "Material": "MDF / WPC / Solid Wood",
+      "Thickness": "12mm - 25mm",
+      "Size": "8ft x 4ft (Customizable)",
+      "Finish": "Raw / PU Polish / Duco"
+    },
+    "features": ["Seamless Continuity", "Water Resistant (WPC)", "Acoustic Diffusion", "Zero-Joint Installation"],
+    "images": [
+      "https://images.unsplash.com/photo-1711418235334-8895331a6cf9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1716191300020-b52dec5b70a8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1740209475472-aa7d280f7452?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "id": "cnc-jali",
+    "name": "Decorative CNC Jali",
+    "category": "Architectural Grills",
+    "shortDesc": "Intricate laser-cut patterns for facades and partitions.",
+    "fullDesc": "Add elegance and privacy with our precision-cut Jali. Available in geometric, floral, and traditional patterns, these grills are perfect for exterior facades, mandir units, and room dividers.",
+    "specs": {
+      "Material": "MS / SS / Aluminum / MDF",
+      "Thickness": "2mm - 30mm",
+      "Technology": "Fiber Laser / CNC Router",
+      "Application": "Indoor & Outdoor"
+    },
+    "features": ["High Precision Cuts", "Rust-Free Coatings", "500+ Design Patterns", "Custom Sizes"],
+    "images": [
+      "https://img.freepik.com/free-photo/industrial-metal-drill-machine-metalworking-workshop_342744-520.jpg?t=st=1769853994~exp=1769857594~hmac=5baddbbc10afdc73cdc467ebe12b0bee27996169d0667a04e2b029878d3954ef&w=1480",
+      "https://img.freepik.com/free-photo/professional-engineer-controlling-process-plasma-cutting_7502-4464.jpg?t=st=1769854048~exp=1769857648~hmac=c98bc9e946c1bd1571d20f8410d13665b66f1dad857a8792e840faa7316364f3&w=1480",
+      "https://img.freepik.com/free-photo/closeup-shot-sparks-flying-from-industrial-steel-cutter_181624-60300.jpg?t=st=1769854105~exp=1769857705~hmac=8801efbbf54f62b2a8989db63d14796222632e9f70a61da6475629cca9b69dc4&w=1480"
+    ]
+  }
+]

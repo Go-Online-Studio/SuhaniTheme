@@ -10,7 +10,7 @@
   }
   .navbar-nav a.nav-link {
     font-size: 0.7rem;
-    padding: 8px 15px !important;
+    padding: 8px 10px !important;
   }
 }
 
@@ -26,6 +26,9 @@
   .about-content {
     padding-right: 0;
     padding-top: 40px;
+  }
+  #contact-form .about-content {
+    padding-top: 0px;
   }
 
   .experience-badge {
@@ -241,13 +244,17 @@
 .process-timeline {
     padding-left: 0;
   }
+
+.GalleryMainItems{
+  width: 50%;
+}
 }
 
 @media (max-width: 575.98px) {
   .page-title {
     font-size: 2rem;
   }
-
+  
   .floating-badge {
     position: relative;
     bottom: auto;
@@ -268,8 +275,17 @@
     align-items: center;
     text-align: center;
   }
-
+  
   .value-card {
     padding: 30px 20px;
+  }
+  .GalleryMainItems{
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .CONTACT_CARDS .btn-service{
+    font-size: 12px;
   }
 }

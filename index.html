@@ -1241,6 +1241,54 @@
         });
       });
     </script>
-    
+    <!-- Page-Specific JS -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        "use strict";
+
+        // ===== WHATSAPP CONFIG =====
+        const WHATSAPP_NUMBER = "919898011309";
+        let isMobile = false;
+        
+        // ===== DEBOUNCE HELPER =====
+        function debounce(func, wait) {
+            let timeout;
+            return function(...args) {
+                const context = this;
+                clearTimeout(timeout);
+                timeout = setTimeout(() => func.apply(context, args), wait);
+            };
+        }
+
+        // ===== MOBILE DETECTION =====
+        function updateMobileState() {
+            isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768;
+        }
+
+        // Initial check
+        updateMobileState();
+
+        // Responsive update
+        const handleResize = debounce(updateMobileState, 250);
+        window.addEventListener("resize", handleResize);
+
+        // ===== SERVICE BOOKING HANDLER =====
+        const serviceButtons = document.querySelectorAll(".btn-service");
+
+        serviceButtons.forEach((button) => {
+            button.addEventListener("click", function (e) {
+                e.preventDefault();
+                const serviceName = this.getAttribute("data-service") || "your services";
+                const message = encodeURIComponent(`Hi, I am interested in ${serviceName} service. Please provide more details.`);
+                
+                const url = isMobile 
+                    ? `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`
+                    : `https://web.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${message}`;
+                
+                window.open(url, "_blank");
+            });
+        });
+      });
+    </script>
 </body>
 </html>

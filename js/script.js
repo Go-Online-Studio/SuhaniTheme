@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About Us</a></li>
                                 <li><a href="services.html">Services</a></li>
+                                <li><a href="updates.html">Updates</a></li>
                                 <li><a href="gallery.html">Gallery</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
@@ -112,44 +113,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 100);
   }
 
-  // ===== DEVICE DETECTION =====
-  function isMobileDevice() {
-    return (
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent,
-      ) || window.innerWidth <= 768
-    );
-  }
-
-  // ===== WHATSAPP URL GENERATOR =====
-  function getWhatsAppURL(message) {
-    const encodedMessage = encodeURIComponent(message);
-    if (isMobileDevice()) {
-      return `https://wa.me/${CONFIG.whatsappNumber}?text=${encodedMessage}`;
-    } else {
-      return `https://web.whatsapp.com/send?phone=${CONFIG.whatsappNumber}&text=${encodedMessage}`;
-    }
-  }
-
-  // ===== SERVICE BOOKING BUTTONS =====
-  const serviceButtons = document.querySelectorAll(".btn-service");
-
-  serviceButtons.forEach((button) => {
-    button.addEventListener("click", function (e) {
-      e.preventDefault();
-      const serviceName = this.getAttribute("data-service");
-      const message = `Hi, I am interested in ${serviceName} service. Please provide more details.`;
-      const url = getWhatsAppURL(message);
-      window.open(url, "_blank");
-    });
-  });
-
   // ===== DEBOUNCE FUNCTION =====
-  function debounce(wait) {
+  function debounce(func, wait) {
     let timeout;
-    return function executedFunction() {
+    return function executedFunction(...args) {
       const later = () => {
         clearTimeout(timeout);
+        func(...args);
       };
       clearTimeout(timeout);
       timeout = setTimeout(later, wait);
@@ -157,7 +127,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // ===== RESIZE LISTENER =====
-  const handleResize = debounce(CONFIG.debounceDelay);
+  const handleResize = debounce(function () {
+    // Refresh AOS on resize to fix layout shifts
+    if (typeof AOS !== "undefined") {
+      AOS.refresh();
+    }
+  }, CONFIG.debounceDelay);
 
   window.addEventListener("resize", handleResize);
 

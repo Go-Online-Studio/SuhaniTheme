@@ -57,6 +57,12 @@
   --skew-angle: -3deg;
   --skew-angle-reverse: 3deg;
 }
+.colorMain{
+  color: var(--neon-red);
+}
+.breadcrumb-item.active.colorMain{
+  color: var(--neon-red) !important;
+}
 
 /* ===== RESET ===== */
 *,
@@ -2612,3 +2618,138 @@ textarea {
   align-items: center;
 }
 
+.GalleryMainItems{
+  width: 33.33333333333%;
+}
+
+/* ===== INDUSTRIAL FORM STYLES ===== */
+.industrial-form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.industrial-label {
+    font-family: var(--font-tech);
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: var(--text-silver);
+    margin-bottom: 10px;
+    display: block;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.industrial-input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--steel-dark);
+    padding: 15px 20px;
+    font-family: var(--font-body);
+    font-size: var(--fs-5);
+    color: var(--text-white);
+    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+    transition: var(--transition);
+    outline: none;
+}
+
+.industrial-input:focus {
+    background: rgba(255, 10, 10, 0.05);
+    border-color: var(--neon-red);
+    box-shadow: var(--neon-glow-sm);
+    color: var(--text-white);
+}
+
+.industrial-input::placeholder {
+    color: var(--text-dim);
+    font-style: italic;
+}
+
+/* Select styling */
+select.industrial-input {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ff0a0a'%3E%3Cpath d='M7.247 11.14L2.451 5.658c-.885-1.013.347-2.345 1.204-1.304L8 8.592l4.345-4.238c.857-1.04 2.09.291 1.204 1.304l-4.796 5.483a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 12px;
+}
+
+
+select.industrial-input option {
+    background: var(--dark-metal);
+    color: var(--text-white);
+    padding: 10px;
+}
+
+/* Floating focus effect for label */
+.industrial-input:focus + .industrial-label,
+.industrial-form-group:focus-within .industrial-label {
+    color: var(--neon-red);
+    text-shadow: var(--neon-glow-sm);
+}
+
+/* Form Decoration */
+.form-corner {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--neon-red);
+    pointer-events: none;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.industrial-input:focus ~ .form-corner {
+    opacity: 1;
+}
+
+.form-corner.tl { top: -4px; left: -5px; border-right: none; border-bottom: none; }
+.form-corner.br { bottom: 22px; right: -5px; border-left: none; border-top: none; }
+
+.CONTACT_CARDS .card-content{
+  padding: 0;
+}
+.CONTACT_CARDS .btn-service{
+  font-size: 14px;
+}
+
+
+/* ===== UPDATES / BLOG STYLES ===== */
+
+/* Hover effect for card titles */
+.hover-red:hover {
+    color: var(--neon-red, #dc3545) !important;
+    transition: color 0.3s ease;
+}
+
+/* Active Filter Button State */
+.active-filter {
+    background-color: var(--neon-red, #dc3545) !important;
+    border-color: var(--neon-red, #dc3545) !important;
+    color: white !important;
+    box-shadow: 0 0 10px rgba(220, 53, 69, 0.4);
+}
+
+/* Search Input Focus */
+#searchInput:focus {
+    border-color: var(--neon-red, #dc3545) !important;
+    box-shadow: none; /* No default blue glow */
+}
+
+/* Transitions */
+.transition-transform {
+    transition: transform 0.3s ease;
+}
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+/* Hover Utilities */
+.hover-opacity-100:hover {
+    opacity: 1 !important;
+}
+.pointer-events-none {
+    pointer-events: none;
+}
+.drop-shadow {
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.8));
+}
