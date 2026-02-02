@@ -45,10 +45,10 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="footer-links-section">
                             <h4 class="footer-title">SERVICES</h4>
                             <ul class="footer-links">
-                                <li><a href="services.html#3d-carving">3D Wood Carving</a></li>
-                                <li><a href="services.html#2d-carving">2D CNC Cutting</a></li>
-                                <li><a href="services.html#wave-board">Wave Board Panels</a></li>
-                                <li><a href="services.html#metal-cnc">Metal CNC Work</a></li>
+                                <li><a href="product-view.html?id=3d-carving">3D Wood Carving</a></li>
+                                <li><a href="product-view.html?id=2d-carving">2D CNC Cutting</a></li>
+                                <li><a href="product-view.html?id=wave-board">Wave Board Panels</a></li>
+                                <li><a href="product-view.html?id=metal-cnc">Metal CNC Work</a></li>
                                 <li><a href="services.html#custom">Custom Designs</a></li>
                             </ul>
                         </div>

@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Latest updates, trends, and news from Suhani Industries. Explore our blog on CNC machining, wood carving designs, and manufacturing insights.">
-    <title>Updates & Insights | Suhani Industries</title>
+    <meta name="description" content="Detailed update from Suhani Industries.">
+    <title>Update Details | Suhani Industries</title>
     <link rel="icon" href="images/Fevicon.png" type="image/png" fetchpriority="low">
 
     <link rel="preload" as="image" href="images/BrandLogo.webp" fetchpriority="high">
@@ -42,11 +41,9 @@
     <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
     </div>
 
-    <!-- ========== PAGE HERO SECTION ========== -->
+    <!-- ========== ARTICLE HEADER HERO ========== -->
     <section class="about-hero section_padding heroPadding">
-        <div class="hero-bg"
-            style="background-image: url('https://images.unsplash.com/photo-1518640165980-d3e0e2aa6c1e?w=1920&q=80');">
-        </div>
+        <div class="hero-bg" id="heroBg" style="background-image: url('images/default-hero.jpg');"></div>
         <div class="hero-overlay"></div>
         <div class="hero-geometric-accent"></div>
         <div class="crosshair-overlay"></div>
@@ -54,57 +51,47 @@
         <div class="container">
             <div class="about-hero-content" data-aos="fade-up">
                 <div class="hero-tag-wrapper">
-                    <span class="hero-tag">
+                    <span class="hero-tag" id="articleCategory">
                         <span class="tag-line"></span>
-                        NEWS & INSIGHTS
+                        UPDATE
                     </span>
                 </div>
-                <h1 class="page-title glitch-text">
-                    THE LATEST <span class="neon-text">UPDATES</span>
+                <h1 class="page-title glitch-text" id="articleTitle">
+                    LOADING <span class="neon-text">UPDATE...</span>
                 </h1>
-                <p class="page-subtitle">
-                    Stay informed with the latest trends in CNC manufacturing, design inspirations, and company
-                    announcements.
+                <p class="page-subtitle" id="articleDate">
+                    <!-- Date will be injected here -->
                 </p>
             </div>
         </div>
-
-        <div class="scroll-indicator">
-            <span class="scroll-text">SCROLL</span>
-            <div class="scroll-line"></div>
-        </div>
     </section>
 
-    <!-- ========== BLOG SEARCH & FILTER SECTION ========== -->
-    <section class="blog-filter-section section_padding">
+    <!-- ========== ARTICLE CONTENT SECTION ========== -->
+    <section class="article-section section_padding">
         <div class="circuit-pattern"></div>
         <div class="container">
-            <!-- Search & Categories Row -->
-            <div class="row mb-5 align-items-center g-4">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="blog-search-wrapper">
-                        <i class="bi bi-search search-icon"></i>
-                        <input type="text" id="blogSearch" class="blog-search-input" placeholder="Search articles...">
-                        <div class="search-border"></div>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="blog-categories" id="categoryContainer">
-                        <button class="blog-filter-btn active" data-category="all">
-                            All
-                        </button>
-                        <!-- Categories will be injected here dynamically -->
-                        <button class="blog-filter-btn" data-category="Machinery Updates">Machinery</button>
-                        <button class="blog-filter-btn" data-category="New Designs">Design</button>
-                        <button class="blog-filter-btn" data-category="Metal Work">Metal Work</button>
+            <div class="row justify-content-center">
+                <div class="col-lg-9" data-aos="fade-up">
+                    <div class="article-container" id="articleContent">
+                        <!-- Dynamic Content will be injected here -->
+                        <div class="text-center">
+                            <div class="spinner-border text-danger" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Blog Grid -->
-            <div class="row g-4" id="blogGrid">
-                <!-- Blog Cards will be injected here via JS -->
-                <div class="col-12 text-center text-white p-5">Loading Updates...</div>
+            <!-- Navigation Buttons -->
+            <div class="row mt-5 justify-content-center">
+                <div class="col-lg-9">
+                    <div class="d-flex justify-content-between border-top border-secondary pt-4">
+                        <a href="updates.html" class="btn-sharp secondary">
+                            <i class="bi bi-arrow-left me-2"></i> BACK TO UPDATES
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -131,7 +118,7 @@
     <script src="js/script.js"></script>
 
     <!-- Page-Specific JS -->
-    <script src="js/updates.js"></script>
+    <script src="js/update-details.js"></script>
 </body>
 
 </html>

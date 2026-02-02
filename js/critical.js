@@ -40,10 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
                             SERVICES
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="3d_carving.html">3D CARVING</a></li>
-                            <li><a class="dropdown-item" href="2d_carving.html">2D CARVING</a></li>
-                            <li><a class="dropdown-item" href="wave_board.html">WAVE BOARD</a></li>
-                            <li><a class="dropdown-item" href="metal_cnc.html">METAL CNC</a></li>
+                            <li><a class="dropdown-item" href="product-view.html?id=3d-carving">3D CARVING</a></li>
+                            <li><a class="dropdown-item" href="product-view.html?id=2d-carving">2D CARVING</a></li>
+                            <li><a class="dropdown-item" href="product-view.html?id=wave-board">WAVE BOARD</a></li>
+                            <li><a class="dropdown-item" href="product-view.html?id=metal-cnc">METAL CNC</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -95,10 +95,10 @@ document.addEventListener("DOMContentLoaded", function () {
                         SERVICES
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="services.html#3d-carving">3D CARVING</a></li>
-                        <li><a class="dropdown-item" href="services.html#2d-carving">2D CARVING</a></li>
-                        <li><a class="dropdown-item" href="services.html#wave-board">WAVE BOARD</a></li>
-                        <li><a class="dropdown-item" href="services.html#metal-cnc">METAL CNC</a></li>
+                        <li><a class="dropdown-item" href="product-view.html?id=3d-carving">3D CARVING</a></li>
+                        <li><a class="dropdown-item" href="product-view.html?id=2d-carving">2D CARVING</a></li>
+                        <li><a class="dropdown-item" href="product-view.html?id=wave-board">WAVE BOARD</a></li>
+                        <li><a class="dropdown-item" href="product-view.html?id=metal-cnc">METAL CNC</a></li>
                     </ul>
                 </li>
                 <li><a href="updates.html">UPDATES</a></li>
@@ -200,9 +200,9 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", function (e) {
       const href = this.getAttribute("href");
       // FIX: Ignore links that don't start with # (like WhatsApp/LinkedIn)
-      
-      if (!href.startsWith("#")) { 
-          return; 
+
+      if (!href.startsWith("#")) {
+        return;
       }
 
       if (href === "#") {
